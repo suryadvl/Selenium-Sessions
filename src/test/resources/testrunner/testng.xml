@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Practice Suite">
+	Verbose="3" thread count ="1" >
+	
+
+
+	<test name="Naveen Test">
+		<parameter name="url" value="https://naveenautomationlabs.com/opencart/index.php?route=account/login" />
+        <parameter name="browserName" value= "Firefox" ></parameter>
+
+		<classes>
+			<class name="UITests.LoginTest" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->

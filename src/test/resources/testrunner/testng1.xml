@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Practice Suite">
+	Verbose="3" thread count ="1" parallel = "tests" >
+	
+
+
+	<test name="Naveen Test">
+		<parameter name="url" value="https://naveenautomationlabs.com/opencart/index.php?route=account/login" />
+        <parameter name="browserName" value= "firefox" ></parameter>
+
+		<classes>
+			<class name="UITests.LoginTest" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test name="Google Test ">
+
+		<parameter name="url" value="https://www.google.com" ></parameter>
+		 <parameter name="browserName" value= "firefox" ></parameter>
+		<classes>
+			<class name="UITests.GoogleTest" />
+		</classes>
+
+     </test> Test
+
+		<test name="OrangeHRM Test">
+
+			<parameter name="url"
+				value="https://www.orangehrm.com/30-day-free-trial" />
+			<parameter name="browserName" value= "firefox" />
+			<classes>
+				<class name="UITests.OrangeHRMTest" />
+			</classes> -->
+		</test> <!-- Test -->
+
+	
+</suite> <!-- Suite -->
